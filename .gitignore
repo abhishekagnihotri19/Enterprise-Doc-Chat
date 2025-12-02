@@ -1,0 +1,8 @@
+chat_venv/
+_pycache_/
+logs/
+*._pyc
+faiss_index/
+main_archive/
+data/
+.env

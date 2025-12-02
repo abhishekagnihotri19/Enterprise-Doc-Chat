@@ -1,0 +1,22 @@
+## Step By Step Interpretation
+
+1. Files Uploaded through FASTAPI as Dict, List or Iterable or Multiple Files from frontEnd 
+2. Files received by FASTAPI action trigger function 
+                    @app.post("/chat/index")
+                    async def chat_build_index
+3. Remember this function (async def chat_build_index) have same arguments that were uploaded by the frontenf or HTML form.
+
+4. Now this function (async def chat_build_index) make object of class ChatIngestor (in data_ingestion.py module) with arguments having 4 Argumentss:: a.temp_base (data folder) 
+and b. faiss_base (folder for embedding or FAISS index), c. session_id d.use_session_dirs (Boolean)
+
+Note:1 In 4th Point, there are one argument that is faiss_base, this faiss_base will be used by class FaissManager to create FAISS folder and faiss index.
+Note: 2 This faiss_base will be used by function built_in_retrieval, that is present in class ChatIngestor
+
+5. Short Overview:::: class ChatIngestor having method built_in_retrieval, where uploaded files saved  (through function "save_uploaded_files")>>> and than go 
+for loading document (through function :load_documents) to get Document object of langchain >>>chunking (throgh function _split)>>>sepreating texts and metadata, and after 
+this finall make object of class FaissManager and than this object makes vector store by calling method load_or_create of class FaissManager
+
+6. Now in class FaissManager>>
+
+
+FLO

@@ -1,0 +1,25 @@
+embedding_model:
+  
+  provider: "google"
+  model: "models/text-embedding-004"
+  
+
+llm:
+    google:
+  
+      provider: "google"
+      llm_name: "gemini-2.0-flash"
+      temperature: 0
+      max_output_tokens: 2048
+    groq:
+      provider: "groq"
+      llm_name: "deepseek-r1-distill-llama-70b"
+      temperature: 0
+      max_output_tokens: 2048
+
+faiss_db:
+  collection_name: "document_portal"
+
+retriever:
+  top_k: 5
+    
