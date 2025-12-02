@@ -19,4 +19,34 @@ this finall make object of class FaissManager and than this object makes vector 
 6. Now in class FaissManager>>
 
 
-FLO
+
+"""
+# Logging
+structlog>=24.1
+
+# PDFs: provides the `fitz` import
+PyMuPDF>=1.24
+
+# LangChain modular packages (keep the 0.2 line in sync)
+langchain>=0.2
+langchain-core>=0.2
+langchain-community>=0.2
+langchain-text-splitters>=0.2
+
+# Integrations
+langchain-google-genai>=2.0
+langchain-groq>=0.1
+
+# Vector index (choose one depending on OS / CUDA)
+faiss-cpu>=1.8.0.post1 
+
+
+fastapi>=0.115
+starlette>=0.37
+Jinja2>=3.1.3
+
+python-multipart>=0.0.9
+pytest>=7.4
+"""
+
+
