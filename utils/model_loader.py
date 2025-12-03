@@ -97,7 +97,7 @@ if __name__=="__main__":
    
     result_llm= llm.invoke("What is Your Name?")
     result_lm= result_llm
-    print (f"LLM Outoy is {result_lm}")            
+    print (f"LLM Output is {result_lm}")            
 
 
             
