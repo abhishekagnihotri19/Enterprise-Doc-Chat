@@ -1,4 +1,4 @@
-Enterprise Doc Chat is a production-ready system that allows enterprises to upload documents (PDF, DOCX, PPTX, TXT) and interact with them using natural language queries.
+Enterprise Doc Chat is a production-ready system that allows enterprises to upload documents (PDF, DOCX, TXT) and interact with them using natural language queries.
 It supports secure file storage, vector search, LLM-based retrieval, user authentication, and scalable deployment on AWS ECS Fargate.
 
 🌟 Features
