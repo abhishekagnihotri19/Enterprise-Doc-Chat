@@ -62,7 +62,7 @@ class ModelLoader:
         try:
             model_name= self.config["embedding_model"]["model"]
             log.info("Embedding Model is Loading")
-            return GoogleGenerativeAIEmbeddings(model=model_name)
+            return GoogleGenerativeAIEmbeddings(model=model_name, google_api_key=self.api_key_mgr.got_keys("GOOGLE_API_KEY"))
         except Exception as e:
             log.error("Error Loading Embedding Model", error=str(e))
             raise DocumentPortalException ("Failed to Load Embeding Model", sys)
