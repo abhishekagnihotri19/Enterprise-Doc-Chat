@@ -28,7 +28,7 @@
       ],
       "secrets": [
         {
-          "name": "apikeyliveclass",
+          "name": "API_KEYS",
           "valueFrom": "arn:aws:secretsmanager:ap-southeast-2:487432950543:secret:apikeyliveclass-8ERBbZ"
         }
         
