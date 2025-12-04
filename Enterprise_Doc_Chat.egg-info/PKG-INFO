@@ -1,0 +1,58 @@
+Metadata-Version: 2.4
+Name: Enterprise-Doc-Chat
+Version: 0.1
+Summary: An intelligent chat portal for enterprise documents using LLMs
+Author: Abhishek Agnihotri
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: langchain==0.3.27
+Requires-Dist: langchain-community==0.3.27
+Requires-Dist: langchain-core==0.3.72
+Requires-Dist: langchain-groq==0.3.6
+Requires-Dist: langchain-google-genai==2.1.8
+Requires-Dist: faiss-cpu==1.11.0.post1
+Requires-Dist: fastapi==0.116.1
+Requires-Dist: uvicorn==0.35.0
+Requires-Dist: python-dotenv==1.1.1
+Requires-Dist: python-multipart==0.0.20
+Requires-Dist: PyMuPDF==1.26.3
+Requires-Dist: structlog==25.4.0
+Requires-Dist: docx2txt==0.9
+Requires-Dist: ipykernel==6.30.0
+Requires-Dist: streamlit==1.47.1
+Requires-Dist: pytest==8.4.1
+Requires-Dist: pypdf==5.8.0
+Requires-Dist: cfn
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pylint; extra == "dev"
+Requires-Dist: ipykernel; extra == "dev"
+Dynamic: author
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+Enterprise Doc Chat is a production-ready system that allows enterprises to upload documents (PDF, DOCX, PPTX, TXT) and interact with them using natural language queries.
+It supports secure file storage, vector search, LLM-based retrieval, user authentication, and scalable deployment on AWS ECS Fargate.
+
+🌟 Features
+
+📤 Multi-format File Uploads – PDF, DOCX,  TXT
+
+🔍 Smart Document Parsing – Extracts text using PyMuPDF 
+
+📚 Semantic Search & RAG Pipeline – Uses embeddings + vector store
+
+💬 Real-time AI Chat – Query any document using natural language
+
+🗄️ Secure Storage – Stored on local storage
+
+☁️ Cloud-native Deployment – Docker + AWS ECR + ECS Fargate
+
+🚀 CI/CD using GitHub Actions
